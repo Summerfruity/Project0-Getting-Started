@@ -11,7 +11,7 @@
  */
 int main(int argc, char* argv[]) {
     // TODO: Change this line to use your name!
-    m_yourName = "TODO: YOUR NAME HERE";
+    m_yourName = "Summerfruity";
 
     if (init(argc, argv)) {
         mainLoop();
@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
  * Initialization of CUDA and GLFW.
  */
 bool init(int argc, char **argv) {
-    // Set window title to "Student Name: [SM 2.0] GPU Name"
+    // Set window title to "Summerfruity: [SM 8.6] GeForce RTX 3060"
     std::string deviceName;
     cudaDeviceProp deviceProp;
     int gpuDevice = 0;

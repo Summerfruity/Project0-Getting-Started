@@ -98,7 +98,7 @@ void kernelVersionVis(uchar4* PBOpos, int width, int height, int major, int mino
     unsigned int blocksY = (height + blockSize - 1) / blockSize;
     dim3 fullBlocksPerGrid(blocksX, blocksY);
 
-    //kernel launches
+    // kernel launches
     createVersionVisualization<<<fullBlocksPerGrid, threadsPerBlock>>>(PBOpos, width, height, major, minor);
 
     // make certain the kernel has completed
